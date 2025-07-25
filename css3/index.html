@@ -1,0 +1,86 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.cube {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-25deg) rotateY(25deg);
+  width: 200px;
+  height: 200px;
+ 
+}
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 5px solid red;
+}
+.cube:hover{
+    transform: rotate(270deg);
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+    
+
+}
+
+.cube__face--front {
+  transform: rotateY(0deg) translateZ(100px);
+  background: rgba(0, 255, 0, 0.7);
+}
+.cube__face--back {
+  transform: rotateY(-90deg) translateZ(100px);
+  background: rgba(255, 0, 0, 0.7);
+}
+.cube__face--right {
+  transform: rotateY(90deg) translateZ(100px);
+  background: rgba(0, 0, 255, 0.7);
+}
+.cube__face--left {
+  transform: rotateY(-90deg) translateZ(100px);
+  background: rgba(255, 255, 0, 0.7);
+}
+.cube__face--top {
+  transform: rotateX(90deg) translateZ(100px);
+  background: rgba(255, 0, 255, 0.7);
+}
+.cube__face--bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+  background: rgba(0, 255, 255, 0.7);
+}
+
+
+
+
+
+</style>
+<body>
+ <div class="bigcube">
+  
+  <div class="cube">
+  <div class="cube__face cube__face--front">front</div>
+  <div class="cube__face cube__face--back">back</div>
+  <div class="cube__face cube__face--right">right</div>
+  <div class="cube__face cube__face--left">left</div>
+  <div class="cube__face cube__face--top">top</div>
+  <div class="cube__face cube__face--bottom">bottom</div>
+
+
+
+
+  </div>
+</div>   
+</body>
+</html>

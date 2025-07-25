@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+</head>>
+<style>
+    /* i want to put a whrite comment that not show in the page*/
+    
+    p{ color: blue;
+
+    }
+ 
+    a[href] {
+      color: rgb(4, 255, 0);
+      text-decoration: none;
+    }
+a[href*="studio"] {
+    color: black;
+}
+li>span{color:green}
+li:hover{background-color: black;}
+li:hover a{color:white}
+ul li:first-child a {color: purple;}
+li::after{content :"melika";
+color: brown;
+ }
+ p::first-letter{font-weight:bold ;}
+p { 
+    padding-top: 50px;
+    background-color: grey;
+    border-color: burlywood;
+    border-style: solid;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    } 
+.header *{font-weight: bold;
+background-image: url(./download.jpeg);
+height: 500px;
+background-size: 200px 200px;
+background-repeat: no-repeat;
+font-family:vazir;}
+
+header p{
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+main p{background: none;
+  border: none;
+  padding: 0;
+  margin: 0;}
+/*.main *{
+  background-image: url(./download.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 1000px;
+  border: 20px dashed red;
+  background-attachment: fixed;
+}*/
+.main * {
+  background: 
+    linear-gradient(40deg, rgba(255,0,0,0.5), rgba(0,0,255,0.5)),
+    url(./download.jpeg) center / cover no-repeat fixed;
+  height: 1000px;
+  border: 20px dashed red;
+  color: #fff;
+  filter: blur(5px);
+
+
+}
+header:hover {
+  filter: blur(0);
+}
+@font-face{font-family:"vazir";
+url(./fonts/vazir-Bold.woff2);
+}
+.class {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.class img {
+  width: 100%;
+
+}
+
+/*.class2-text {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding }*/
+ .class2-text {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font: bold 50px sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  font-size: 10em;
+} 
+.class2-text {
+  line-height: 2px;
+}
+div p{
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: line-through red;
+  text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.5);
+word-spacing: 10px;
+font-size:20px;
+
+}
+.box {
+  width: 50%;
+  height: 20%;
+  background-color: red;
+}
+.box {
+  width: 50%;
+  height: 200px; 
+  background-color: red;
+}
+   .tryfont {
+      font-size: 16px;
+      color: #222;
+      margin-bottom: 30px;
+      font-weight: bold;
+      border-left: 4px solid #555;
+      padding-left: 12px;
+    }
+
+    .font {
+      font-size: 2em;
+      color: #c527bdff;
+      background-color:blue;
+      padding: 30px 30px;
+      display: block;
+      border-radius: 20px;
+      filter:blur(0.5px);
+    }
+.layout {
+color: aliceblue;
+  border: 10px solid #e70e0e;
+padding: 20px;
+  background-color: #1a5d09;
+  width: 80%;
+  margin: auto;
+}
+.layout header,
+.layout aside,
+.layout section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #40d48f;
+  text-align: center;
+}
+.flexbox{background-color: #9b5275;
+  margin-top: 50px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+.item{
+  font-size: 2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+    flex-basis: 6rem;
+    order: 1;
+
+
+}
+.content{
+  width: 1200px;
+ 
+  margin: 0 auto;
+background-image: url(aks-pas-zamine-shik-v-khas-32.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+
+
+}
+.form{
+  margin-top: 5rem;
+  font-family: fantasy;
+}
+.content .form{
+  font-size: 2rem;
+  color: #44805e;
+  margin-bottom: 1.5rem;
+}
+.form label , .form input:not([type="checkbox"]){
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+
+.form input.f{
+  width:50% ;
+  padding: 1rem 1rem;
+  border: 1px solid red;
+
+}
+input::placeholder {
+  font-weight: bold;
+  font-size: xx-large;
+  color: rgb(51, 5, 232);
+}
+checkbox input{
+  display: none;
+}
+.checkbox .checkmark {
+  height: 30px;
+  width: 30px;
+  background-color: #1a5d09;
+  display: block;
+
+}
+
+
+</style>
+<body>
+ <header class="header">
+<p>HI everybod</p>
+<p>به نام خدا <br>پروژه وزیرمتن یک خانواده تایپ‌فیس فارسی-عربی با ۹ وزن است که در سال ۱۳۹۴ با نام «وزیر» آغاز شد و در طول این سال‌ها طراحی و توسعه آن ادامه یافت. فونت وزیرمتن شکلی ساده و روان دارد و می‌توان از آن در اغلب زمینه‌ها استفاده کرد. برای حروف لاتین از فونت Roboto استفاده شده است. این یک نرم افزار آزاد و متن‌باز است.</p>
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-code-font@v1.1.2/dist/font-face.css" rel="stylesheet" type="text/css" />
+ </header>
+<p style="background:red">hi i am melika behroozpoor i want to work  with css</p>
+<ul>
+    <li>
+        <a href="https://code.visualstudio.com/">link for link </a>
+ <span>hello plan</span>
+    </li>
+ <span>hello plan</span>
+ <li> <a href="https://soft98.ir/software/programming/53-visual-studio-code-1.html">new link</a>
+
+    </li>
+
+   
+</ul>
+
+
+<p class=" text">css nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+<p id="mt"  class="se">rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</p>
+<main class="main">
+  <p>my main image</p>
+</main>
+<div class="class">
+  <img src="Visual_Studio_Code_1.35_icon.svg.png" >
+  <h1 class="class2">به نام خدا</h1>
+  <p class="class3">
+    پروژه وزیرمتن یک خانواده تایپ‌فیس فارسی-عربی با ۹ وزن است که در سال ۱۳۹۴ با نام «وزیر» آغاز شد و در طول این سال‌ها طراحی و توسعه آن ادامه یافت...
+  </p>
+</div>
+<div class="box"></div>
+<header class="tryfont">
+  In the name of god
+</header>
+<p class="font">
+  i want to try this font
+</p>
+<div class="layout">
+  <header>
+    <div>header</div>
+  </header>
+  <aside>
+    <div>header2</div>
+  </aside>
+  <section>
+    <div>header3</div>
+  </section>
+</div>
+<div class="flexbox">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+  <div class="item">7</div>
+
+</div>
+<div class="content">
+<form class="form">
+<h2>Registration form</h2>
+
+  <label for="lastname">نام و نام خانوادگی:</label>
+  <input type="text" id="lastname" name="lastname" class="f invalid" placeholder="لطفا نام را وارد کنید">
+
+  <label for="email">ایمیل:</label>
+  <input type="email" id="email" name="email" class="f">
+
+  <label for="password">رمز عبور:</label>
+  <input type="password" id="password" name="password" class="f">
+<button type="submit">ثبت نام</button>
+<label class="checkbox">
+  <input type="checkbox"> I accept the rules.
+  <span class="checkmark"></span>
+</label>
+</form>
+</div>
+
+
+</body>
+
+
+
+
+
+
+
+</html>
