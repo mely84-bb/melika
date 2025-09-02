@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>image </h1>
+    <img id="image" />
+<p><button onclick="im()">please click</button></p>
+
+<div id="red">
+<div id="top" style="top: 500px; right: 500px;">
+    </div>
+</div>
+
+</div>
+<style>
+      #red {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: rgb(34, 31, 216);
+      }
+      #top {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background: rgb(211, 72, 139);
+      }
+    </style>
+ <button onclick="this.innerHTML = 'click'">hi</button>
+<h1 onclick="text(this)">click to change</h1>
+<div onmouseover="ms(this)" onmouseout="mos(this)" style="background-color: rgb(236, 146, 10);width: 350px;height: 50px;padding: 40px;color: white">for mouse</div>
+<p>melika</p>
+<p>behroozpoor</p>
+<button onclick="ch()">click to change couler</button>
+
+<button onclick="site()">click to change site</button>
+<h1>WINDOW HISTORY</h1>
+<a href="contactUS.html">contact</a>
+<br>
+<button onclick="pop()">TRY IT</button>
+<p id="answer"></p>
+<button onclick="yourname()">TRY IT</button>
+<p id="NM"></p>
+<p id="time"></p>
+<button onclick="clearInterval(timer)">Stop</button>
+</body>
+<script>
+document.getElementById("image").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG2s-a6IKiKkv3TpCIxfExRAavtWW-wJ0OzA&s"
+document.getElementById("image").style.width="500px";
+
+
+
+;
+    function im() {
+      var elem = document.getElementById("top");
+      var pos = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++;
+          elem.style.top = pos + "px";
+          elem.style.left = pos + "px";
+        }
+      }
+    }
+    
+    function text(id) {
+      id.innerHTML = "melika";
+    }
+      function ms(obj) {
+      obj.innerHTML = "hi";
+    }
+    function mos(obj) {
+      obj.innerHTML = "click me";
+    }
+
+
+      function ch() {
+        var myColl = document.getElementsByTagName("p");
+        var i;
+        for (i = 0; i < myColl.length; i++) {
+          myColl[i].style.color = "blue";
+        }
+      }
+
+ function site()
+ {
+     window.location.assign("https://codeyad.com/courses/game-development");
+ }
+ 
+      function pop() {
+        var txt = "";
+        if (confirm("انتخاب کنید")) {
+          txt = "ok ";
+        } else {
+          txt = "cancel";
+        }
+        document.getElementById("answer").innerHTML = txt;
+      }
+    
+
+      function yourname() {
+        var txt = "";
+        var person = prompt("نام خود را وارد کنید ");
+        if (person == null || person == "") {
+          txt = "cancel";
+        } else {
+          txt = "hello " + person;
+        }
+        document.getElementById("NM").innerHTML = txt;
+      }
+    var timer=setInterval(seetime,1000)
+    function seetime(){
+var d=new Date
+document.getElementById("time").innerHTML = d.toLocaleTimeString();
+
+    }
+
+
+ 
+    
+   
+
+
+  
+
+  
+</script>
